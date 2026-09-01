@@ -1,0 +1,6 @@
+pandas>=2.0
+numpy>=1.24
+nbformat>=5.9
+matplotlib>=3.7
+reportlab>=4.0
+duckdb>=1.0
