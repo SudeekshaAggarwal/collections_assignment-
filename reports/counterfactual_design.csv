@@ -1,0 +1,9 @@
+component,design
+Treatment,Eligible accounts assigned to the new targeting strategy
+Control,Comparable eligible accounts retained on the previous targeting strategy
+Stratification,"DPD band, risk segment, loan type, prior recovery, geography"
+Primary outcome,30-day golden recovery per eligible account
+Identification,Random assignment removes measured and unmeasured confounding in expectation
+Decision rule,Scale only if the confidence interval for incremental annual recovery clears the ₹10 Cr break-even hurdle
+Downside,No uplift or negative uplift; stop after predefined guardrails
+Limitation,Historical observational data cannot by itself identify causal targeting ROI

@@ -1,0 +1,15 @@
+check,value,impact,treatment
+successful_payment_rows_before_dedup,17880.0,Raw successful recovery reference population,Filter payment_status=SUCCESS
+unique_successful_payment_ids,17534.0,Golden transaction population,Keep latest event_at per payment_id
+duplicate_successful_payment_rows,346.0,Can inflate recovery,Deduplicate by payment_id
+duplicate_payment_amount_removed_inr,25901961.690000057,Raw recovery inflation,Remove duplicate payment_id rows
+reused_payment_references,4678.0,Reference is not a transaction key,Do not deduplicate by payment_reference
+payment_references_spanning_multiple_accounts,3407.0,Confirms reference reuse across accounts,Use payment_id as transaction key
+borrower_ids_with_conflicting_snapshots,8518.0,Historical borrower attributes can be unstable,Use temporal identity policy and flag descriptive fields
+agent_ids_with_multiple_identity_values,1000.0,Agent performance and tenure can be misattributed,Use temporal identity master before agent KPI use
+vendors_with_multiple_call_timezones,15.0,Calling-hour comparisons can be distorted,Use explicit event timezone mapping
+duplicate_call_ids,1350.0,Call counts can be inflated,Deduplicate call_id before event-level KPIs
+duplicate_whatsapp_event_ids,600.0,Digital event counts can be inflated,Deduplicate whatsapp_event_id
+august_observed_days,8.0,August is incomplete,Exclude August from full-month MoM claim
+calls_borrower_account_mismatches,89939.0,Event identity cannot be trusted blindly,Flag mismatches; do not silently rewrite borrower_id
+successful_payment_borrower_account_mismatches,17279.0,Payment borrower attribution risk,Use account master for account-level recovery and retain mismatch flag

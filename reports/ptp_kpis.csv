@@ -1,0 +1,7 @@
+metric,value
+total_ptps,18000.0
+kept_ptps,4489.0
+broken_ptps,4553.0
+open_ptps,4415.0
+cancelled_ptps,4543.0
+ptp_kept_rate_pct,49.64609599646096

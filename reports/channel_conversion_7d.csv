@@ -1,0 +1,5 @@
+recommended_channel,targeted_accounts,target_events,paid_accounts_7d,attributed_recovery_7d,conversion_7d_pct,observational_only
+FIELD,8892,10265,168,13194481.97,1.8893387314439947,True
+SMS,8802,10171,190,13808410.77,2.1586003181095204,True
+VOICE,8764,10086,200,15328120.66,2.2820629849383844,True
+WHATSAPP,8821,10188,186,14179152.26,2.1086044666137624,True

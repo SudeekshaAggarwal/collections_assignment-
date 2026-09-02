@@ -1,0 +1,4 @@
+metric,value,note
+agent_ids,1000,Operational agent IDs
+agent_ids_with_multiple_joined_dates,1000,Tenure is not reliable without temporal identity resolution
+agent_ids_with_multiple_names,1000,Identity conflict

@@ -1,0 +1,7 @@
+measure,value,interpretation
+raw_target_rows,45000,All targeting events before episode collapse
+unique_target_ids,45000,Unique targeting events
+unique_account_months,40710,Unique account-month denominator
+unique_targeted_accounts,23344,Unique accounts touched at least once
+first_target_account_months,40710,Primary golden episode denominator
+sum_of_first_target_channel_account_counts,35279,May exceed unique accounts because channels are not mutually exclusive

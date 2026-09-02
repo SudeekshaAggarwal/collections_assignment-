@@ -1,0 +1,6 @@
+dataset,rows,borrower_mismatch_to_account,account_not_found,mismatch_rate_pct
+calls,91350,89939,1403,98.45539135194308
+call_attempts,120000,118126,1863,98.43833333333333
+call_dispositions,35000,34474,524,98.49714285714286
+promises_to_pay,18000,17706,293,98.36666666666667
+successful_payments,17534,17279,254,98.5456826736626

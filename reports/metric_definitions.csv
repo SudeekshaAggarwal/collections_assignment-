@@ -1,0 +1,10 @@
+metric,definition,status
+Contact rate,Unique account-months with at least one ANSWERED call divided by unique account-months with at least one call event,Observed
+RPC rate,Unique account-months with an RPC-coded disposition divided by unique account-months with at least one call event,"Observed, code-set dependent"
+PTP rate,Unique account-months with a PTP-coded disposition divided by unique account-months with an RPC-coded disposition,"Observed, code-set dependent"
+PTP kept rate,KEPT PTPs divided by KEPT plus BROKEN PTPs,Observed
+Recovery rate,Golden successful recovery divided by targeted outstanding amount,Provisional because account outstanding is a current snapshot
+Recovery per account,"Recovery divided by unique targeted accounts or unique paid accounts, reported separately",Observed
+Recovery per agent-hour,Recovery attributed to an agent divided by productive session hours,Not reliable until agent identity and session attribution are resolved
+Cost per rupee recovered,Incremental collection operating cost divided by incremental recovery,Not estimable because no cost fields are supplied
+Channel conversion,Unique first-target accounts with a positive attributed payment within 7 days divided by first-target accounts in that channel,"Observed, not causal"

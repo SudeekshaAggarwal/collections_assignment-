@@ -1,0 +1,48 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Collections Executive Dashboard</title>
+<style>
+body{font-family:Arial,sans-serif;margin:20px;background:#f4f4f4;color:#222}
+h1{margin:0 0 4px}.sub{color:#666;margin-bottom:14px}.grid{display:grid;grid-template-columns:repeat(4,1fr);gap:10px}.two{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:10px}.card,.panel{background:#fff;padding:14px;border-radius:7px}.big{font-size:25px;font-weight:700;margin-top:5px}.decision{margin-top:10px;border-left:5px solid #222}.warning{margin-top:10px;background:#fff3cd;padding:12px;border-radius:7px}.note{font-size:12px;color:#666}table{width:100%;border-collapse:collapse;font-size:13px}th,td{text-align:left;padding:6px;border-bottom:1px solid #ddd}@media(max-width:900px){.grid,.two{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<h1>Collections Performance</h1>
+<div class="sub">Golden payment layer | Full months Jan-Jul 2026 | August excluded from full-month trend conclusions</div>
+<div class="grid">
+<div class="card"><div>Jan recovery</div><div class="big">₹18.72 Cr</div></div>
+<div class="card"><div>Mar MoM</div><div class="big">+11.03%</div></div>
+<div class="card"><div>Jul recovery</div><div class="big">₹18.72 Cr</div></div>
+<div class="card"><div>₹10 Cr break-even uplift</div><div class="big">4.60%</div></div>
+</div>
+<div class="panel decision">
+<h2>Executive decision</h2>
+<p><b>The reported sustained 11% MoM improvement is not supported.</b> March is +11.03% versus February, but later full months do not sustain the claim.</p>
+<p><b>Recommendation:</b> Better borrower targeting, released in stages through a stratified randomized holdout. Observed channel conversion is not causal.</p>
+</div>
+<div class="two">
+<div class="panel"><h2>Monthly recovery</h2>
+<table><tr><th>Month</th><th>Recovery</th><th>MoM</th></tr>
+<tr><td>Jan</td><td>₹18.72 Cr</td><td>n/a</td></tr><tr><td>Feb</td><td>₹17.01 Cr</td><td>-9.13%</td></tr><tr><td>Mar</td><td>₹18.89 Cr</td><td>+11.03%</td></tr><tr><td>Apr</td><td>₹17.51 Cr</td><td>-7.29%</td></tr><tr><td>May</td><td>₹18.43 Cr</td><td>+5.20%</td></tr><tr><td>Jun</td><td>₹17.56 Cr</td><td>-4.72%</td></tr><tr><td>Jul</td><td>₹18.72 Cr</td><td>+6.65%</td></tr>
+</table></div>
+<div class="panel"><h2>Investment hurdle</h2>
+<table><tr><th>Scenario</th><th>Uplift</th><th>Incremental</th><th>ROI</th></tr>
+<tr><td>Downside</td><td>2%</td><td>₹4.35 Cr</td><td>-56.5%</td></tr>
+<tr><td>Base</td><td>5%</td><td>₹10.87 Cr</td><td>+8.7%</td></tr>
+<tr><td>Upside</td><td>10%</td><td>₹21.75 Cr</td><td>+117.5%</td></tr>
+</table><p class="note">Scenarios are hurdle calculations, not causal forecasts.</p></div>
+</div>
+<div class="two">
+<div class="panel"><h2>Observed 7-day channel conversion</h2>
+<table><tr><th>Channel</th><th>Accounts</th><th>Paid</th><th>Conversion</th></tr>
+<tr><td>VOICE</td><td>8,764</td><td>200</td><td>2.28%</td></tr><tr><td>SMS</td><td>8,802</td><td>190</td><td>2.16%</td></tr><tr><td>WHATSAPP</td><td>8,821</td><td>186</td><td>2.11%</td></tr><tr><td>FIELD</td><td>8,892</td><td>168</td><td>1.89%</td></tr>
+</table><p class="note">Observed only. No causal ranking.</p></div>
+<div class="panel"><h2>Data quality</h2>
+<ul><li>346 duplicate successful payment rows</li><li>₹2.59 Cr duplicate payment amount removed</li><li>payment_reference is not unique</li><li>Event borrower IDs conflict with account master at very high rates</li><li>Agent identities and joined dates are inconsistent</li><li>Multiple call timezones occur within vendors</li><li>Campaign names are reused across strategy versions</li><li>August is incomplete</li></ul>
+</div>
+</div>
+<div class="warning"><b>Investment gate:</b> The observational dataset does not identify causal ROI. Run the randomized holdout before committing the full ₹10 Cr.</div>
+</body></html>
